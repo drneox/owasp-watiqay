@@ -38,7 +38,7 @@ class Server:
                 logging.debug(connect.output)
                 return data
             except ValueError as e:
-                logging.error(f'{e} - {__name__}')
+                logging.error(f'{e}')
                 error = 0
                 return error
         else:
